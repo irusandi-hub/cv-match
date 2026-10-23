@@ -1,0 +1,40 @@
+{
+  "name": "cv-match",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p ${PORT:-3000}",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-3000}",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "generate-samples": "node scripts/generate-samples.mjs"
+  },
+  "dependencies": {
+    "mammoth": "^1.13.0",
+    "next": "^15",
+    "react": "^19",
+    "react-dom": "^19",
+    "unpdf": "^1.9.1",
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "docx": "^9.13.0",
+    "eslint": "^9",
+    "eslint-config-next": "^15",
+    "pdf-lib": "^1.17.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9",
+    "vitest": "^3"
+  },
+  "trustedDependencies": [
+    "unrs-resolver"
+  ]
+}
